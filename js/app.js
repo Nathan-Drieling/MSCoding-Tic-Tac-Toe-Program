@@ -5,6 +5,7 @@ let newGameBtn = document.querySelector('#new-btn');
 let msgContainer = document.querySelector('.msg-container');
 let msg = document.querySelector('#msg');
 
+// win conditions for tic tac toe
 const winPatterns = [
         [0, 1, 2],
         [0, 3, 6],
@@ -16,6 +17,7 @@ const winPatterns = [
         [6, 7, 8]
 ];
 
+// For each box, click and (depending on the turn) enter O or X
 boxes.forEach((box) => {
         box.addEventListener('click', function () {
         if (turnO) {
@@ -83,5 +85,5 @@ const resetGame = () => {
         msgContainer.classList.add('hide');
 };
 
-newGameBtn.addEventListener('click', resetGame);
-resetBtn.addEventListener('click', resetGame);
+newGameBtn = newGameBtn.addEventListener('click', resetGame);
+resetBtn = resetBtn.addEventListener('click', resetGame);
