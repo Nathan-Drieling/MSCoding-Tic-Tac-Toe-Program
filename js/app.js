@@ -85,5 +85,5 @@ const resetGame = () => {
         msgContainer.classList.add('hide');
 };
 
-newGameBtn = newGameBtn.addEventListener('click', resetGame);
-resetBtn = resetBtn.addEventListener('click', resetGame);
+newGameBtn.addEventListener('click', resetGame());
+resetBtn.addEventListener('click', resetGame());
