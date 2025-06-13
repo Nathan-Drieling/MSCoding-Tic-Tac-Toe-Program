@@ -1,9 +1,9 @@
-let boxes = document.querySelectorAll('.box');
-let resetBtn = document.querySelector('#reset');
+let boxes = document.querySelectorAll(".box");
+let resetBtn = document.querySelector("#reset");
 let turnO = true; // Player O starts
-let newGameBtn = document.querySelector('new-btn');
-let msgContainer = document.querySelector('.msg-container');
-let msg = document.querySelector('#msg');
+let newGameBtn = document.querySelector("new-btn");
+let msgContainer = document.querySelector(".msg-container");
+let msg = document.querySelector("#msg");
 
 // win conditions for tic tac toe
 const winPatterns = [
